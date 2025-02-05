@@ -1,0 +1,52 @@
+
+
+body {
+  height: 100vh;
+  background-color: grey;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 20% 20% 1fr 15%;
+  grid-template-areas: 
+    "header header"
+    "article text1"
+    "article text2"
+    "main main"
+    "footer footer";
+}
+
+header {
+    background-color: darksalmon;
+    grid-area: header;
+    border-radius: 25px;
+
+}
+article {
+    background-color: red;
+    grid-area: article;
+    border-radius: 25px;
+}
+
+.text1 {
+    background-color: green;
+    grid-area: text1;
+    border-radius: 25px;
+}
+
+.text2 {
+    background-color: greenyellow ;
+    grid-area: text2;
+    border-radius: 25px;
+}
+
+main {
+    background-color: brown;
+    grid-area: main;
+    border-radius: 25px;
+}
+
+footer {
+    background-color: #E1B1B2;
+    grid-area: footer;
+    border-radius: 25px;
+}

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  /* Definido a cor de fundo */
+  background-color: black;
+  /* Definido a altura */
+  height: 100vh;
+}
+
+#cards {
+  height: 100%;
+  gap: 5px;
+  /* display grid permite usar suas funcionalidades */
+  display: grid;
+  /* Templete colums define as colunas */
+  grid-template-columns: repeat(3, 1fr);
+  /* template rows define as linhas */
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* Aqui define cada div e sua cor */
+#cards .card:nth-child(1) {
+  background-color: #fe6058;
+  grid-column: 0/1;
+}
+
+#cards .card:nth-child(2) {
+  background-color: #fe825c;
+  grid-column: 2/2;
+}
+
+#cards .card:nth-child(3) {
+  background-color: #fca062;
+  grid-column: 3/4;
+}
+
+#cards .card:nth-child(4) {
+  background-color: #01a886;
+  grid-column: 0/1;
+}
+
+#cards .card:nth-child(5) {
+  background-color: #1ac1a2;
+  grid-column: 2/3;
+}
+
+#cards .card:nth-child(6) {
+  background-color: #34dbbc;
+  grid-column: 3/4;
+}
+
+/* Responsividade e sua configurações */
+@media (max-width: 500px) {
+  #cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  #cards .card:nth-child(1) {
+    background-color: #fe6058;
+    grid-column: 1/2;
+  }
+
+  #cards .card:nth-child(2) {
+    background-color: #fe825c;
+    grid-column: 2/3;
+  }
+
+  #cards .card:nth-child(3) {
+    background-color: #fca062;
+    grid-column: 1/2;
+  }
+
+  #cards .card:nth-child(4) {
+    background-color: #01a886;
+    grid-column: 2/3;
+  }
+
+  #cards .card:nth-child(5) {
+    background-color: #1ac1a2;
+    grid-column: 1/2;
+  }
+
+  #cards .card:nth-child(6) {
+    background-color: #34dbbc;
+    grid-column: 2/3;
+  }
+}

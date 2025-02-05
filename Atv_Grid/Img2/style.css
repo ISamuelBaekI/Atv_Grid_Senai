@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "header header main"
+    "p1 p2 main";
+
+  gap: 5px;
+}
+
+header {
+  background-color: #fe6058;
+  grid-area: header;
+}
+
+#p1 {
+  background-color: #01a886;
+  grid-area: p1;
+}
+
+#p2 {
+  background-color: #1ac1a2;
+  grid-area: p2;
+}
+
+main {
+  background-color: #fca062;
+  grid-area: main;
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "p1 p2";
+  }
+}

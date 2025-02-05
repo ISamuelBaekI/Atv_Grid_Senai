@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  gap: 5px;
+}
+
+#cards {
+  height: 100vh;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#cards .card:nth-child(1) {
+  background-color: #01A886;
+}
+
+#cards .card:nth-child(2) {
+  background-color: #FE825C;
+}
+
+#cards .card:nth-child(3) {
+  background-color: #19C2A4;
+}
+
+#cards .card:nth-child(4) {
+  background-color: #FD6058;
+}
+
+#cards .card:nth-child(5) {
+  background-color: #36DABE;
+}
+
+#cards .card:nth-child(6) {
+  background-color: #FE825C;
+}
+
+#cards .card:nth-child(7) {
+  background-color: #FE9F62;
+}
+
+#cards .card:nth-child(8) {
+  background-color: #01A888;
+}
+
+#cards .card:nth-child(9) {
+  background-color: #FC835C;
+}
+
+#cards .card:nth-child(10) {
+  background-color: #1AC1A2;
+}
+
+#cards .card:nth-child(11) {
+  background-color: #FE9F62;
+}
+
+#cards .card:nth-child(12) {
+  background-color: #FE6058;
+}
+
+#cards .card:nth-child(13) {
+  background-color: #01A886;
+}
+
+#cards .card:nth-child(14) {
+  background-color: #FC6156;
+}
+
+#cards .card:nth-child(15) {
+  background-color: #34DABE;
+}
+
+#cards .card:nth-child(16) {
+  background-color: #FE825E;
+}
+
+#cards .card:nth-child(17) {
+  background-color: #01A886;
+}
+
+#cards .card:nth-child(18) {
+  background-color: #34DBBC;
+}
+
+@media (max-width: 520px) {
+  #cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+}
